@@ -203,16 +203,16 @@ function formCheck() {
             var input = $inputs[ i ];
             if ( $( input ).attr( "required", true ) && !validateRequired( $( input ).val() ) ) {
 
-                addErrorData( $( input ), "This field is required" );
+                addErrorData( $( input ), "Este campo é obrigatório" );
 
                 isError = true;
             }
             if ( $( input ).attr( "required", true ) && $( input ).attr( "type" ) === "email" && !validateEmail( $( input ).val() ) ) {
-                addErrorData( $( input ), "Email address is invalid" );
+                addErrorData( $( input ), "Este e-mail é inválido!" );
                 isError = true;
             }
             if ( $( textarea ).attr( "required", true ) && !validateRequired( $( textarea ).val() ) ) {
-                addErrorData( $( textarea ), "This field is required" );
+                addErrorData( $( textarea ), "Este campo é obrigatório" );
                 isError = true;
             }
         }
